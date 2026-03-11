@@ -1,7 +1,7 @@
 {
-	"name": "obsidian-sample-plugin",
+	"name": "DMV2Statblock",
 	"version": "1.0.0",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"description": "A plugin to convert Dungeon Master Vault (formerly orcpub) JSONs into Fantasy Statblocks's formatted notes.",
 	"main": "main.js",
 	"type": "module",
 	"scripts": {

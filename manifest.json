@@ -1,11 +1,11 @@
 {
-	"id": "sample-plugin",
-	"name": "Sample Plugin",
+	"id": "DMV2Statblock",
+	"name": "Dungeon Master Vault to Statblock",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
+	"description": "A plugin to convert Dungeon Master Vault (formerly orcpub) JSONs into Fantasy Statblocks's formatted notes.",
+	"author": "Darkoyd",
+	"authorUrl": "https://github.com/Darkoyd",
+	"fundingUrl": "https://github.com/sponsors/Darkoyd",
 	"isDesktopOnly": false
 }
