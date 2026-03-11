@@ -1,6 +1,13 @@
 import { AbstractInputSuggest, App, Modal, Notice, Setting, TFolder, normalizePath } from "obsidian";
 
 class FolderSuggest extends AbstractInputSuggest<TFolder> {
+	private el: HTMLInputElement;
+
+	constructor(app: App, inputEl: HTMLInputElement) {
+		super(app, inputEl);
+		this.el = inputEl;
+	}
+
 	getSuggestions(query: string): TFolder[] {
 		const lower = query.toLowerCase();
 		return this.app.vault
@@ -15,7 +22,7 @@ class FolderSuggest extends AbstractInputSuggest<TFolder> {
 
 	selectSuggestion(folder: TFolder): void {
 		this.setValue(folder.path);
-		(this as unknown as { inputEl: HTMLInputElement }).inputEl.dispatchEvent(new Event("input"));
+		this.el.dispatchEvent(new Event("input"));
 		this.close();
 	}
 }
